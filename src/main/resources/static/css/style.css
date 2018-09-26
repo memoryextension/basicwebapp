@@ -1,0 +1,44 @@
+header img {width:50px;padding:5px; vertical-align:middle;}
+footer,header .logininfo {font-size:.8em;}
+body{margin:40px
+auto;max-width:650px;line-height:1.6;font-size:18px;color:#444;padding:0
+10px}
+h1,h2,h3{line-height:1.2}
+
+nav li {
+	display:inline;
+	padding:0;
+	margin:0 1em;
+}
+nav ul {border-bottom:solid 1px #ccc}
+li.active-menu a {
+	background:#ccc;
+	color:#000;
+}
+
+table#users a ,
+nav li a {
+	color: #777;
+    text-decoration: none;
+    padding:.2em .5em;
+}
+
+footer {margin-top:3em; border-top: solid 1px grey;}
+
+article.personDetails,form {
+	 display: grid;
+	 grid-template-columns: 1fr 10fr;
+}
+
+div.label, form label { grid-column:1;}
+div.value, form input { grid-column:2; }
+
+article.personDetails h2, form div{
+grid-column-start:1;grid-column-start:span 2;}
+form.div {margin:.5em;}
+form div.error {color:red;font-weight:bold;}
+form div.error p {margin:0;}
+
+table#users tbody td {border-bottom:solid 1px #eee; padding:3px; margin:0}
+table#users thead th {text-align:left;}
+table#users a:after {content: '⇨'}

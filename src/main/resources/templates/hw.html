@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      layout:decorator="layouts/default">
+    <head>
+    <title>Hello</title>
+    </head>
+    <body >
+    <main th:fragment="content">    
+    
+    <nav class="tabs" th:include="fragments/nav" />
+    
+    <article>
+    	<h1>Hello</h1>
+		<p th:text="'Hello '+${name}">bye bye</p>
+    </article>
+    
+    </main>
+    </body>
+    </html>

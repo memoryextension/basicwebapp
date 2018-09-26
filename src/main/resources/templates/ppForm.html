@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org" 
+      layout:decorator="layouts/default">
+    <head>
+    <title>Ping Pong</title>
+    </head>
+    <body >
+    <main th:fragment="content">    
+    
+    <nav class="tabs" th:include="fragments/nav" />
+    
+    <article>
+    	<h1 >Select range</h1>
+    
+    <form id="ppForm" th:action="@{/pp/}" th:object="${pp}" action="#" method="post">
+    
+    
+    <label for="start">Start </label> 
+	<input type="text" th:field="*{start}" th:class="${#fields.hasErrors('start')} ? 'field-error'" />
+ 			 
+    <label for="end">End </label> 
+	<input type="text" th:field="*{end}" th:class="${#fields.hasErrors('end')} ? 'field-error'" />
+
+	<div class="form-actions">
+				<input type="submit" value="PingPong it" name="save"/>
+				<input type="submit" value="Cancel" name="cancel"/>
+	</div>
+    
+    </form>
+   
+    </article>
+    
+    </main>
+    </body>
+    </html>

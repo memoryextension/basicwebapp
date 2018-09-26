@@ -1,0 +1,6 @@
+<nav>
+	<ul>	
+ 		<li th:classappend="${#httpServletRequest.getRequestURI().equals('/pp/') ? 'active-menu':''}"><a th:href="@{/pp/}">PP</a></li>
+ 		<li th:classappend="${#httpServletRequest.getRequestURI().endsWith('/help/') ? 'active-menu':''}"> <a th:href="@{/help/}">help</a></li>
+	</ul>
+</nav>

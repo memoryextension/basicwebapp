@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+ 
+ <!--/* This is the default layout */-->
+ 
+<head>
+<meta
+name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/webjars/normalize.css/normalize.css" th:href="@{/webjars/normalize.css/normalize.css}" />
+        <link rel="stylesheet" href="/css/style.css" th:href="@{/css/style.css}" />
+</head>
+<body>
+<header th:replace="fragments/header :: header">
+    default Header
+</header>
+<main th:replace=":: content">
+    sample content
+</main>
+<footer th:replace="fragments/footer :: footer">
+    default Footer
+</footer>
+</body>
+</html>
